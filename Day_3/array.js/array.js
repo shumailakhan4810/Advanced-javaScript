@@ -1,18 +1,19 @@
 let arr = [2,4,6,8,10,12]
-console.log(arr[5]) // index number always start with 0
-console.log(arr[6])
-console.log(arr.length)
-console.log(typeof arr)
+console.log(arr[5]) // index number always start with 0 ans = 12
+console.log(arr[6]) // undefined
+console.log(arr.length) //6
+console.log(typeof arr) // object
 console.log(arr.toString())
+
 
 
 // pop method
 let x = ["cat","Dog","Lion","Tiger"]
 
-// console.log(x.pop())
-// console.log(x)
+console.log(x.pop()) // remove last element of an array
+console.log(x)
 // Cow
-console.log(x.push("Cow","Duck"))
+console.log(x.push("Cow","Duck")) // add element at the end of an arry
 console.log(x)
 
 // Shift Method remove the first element of an array
