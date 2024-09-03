@@ -8,7 +8,23 @@
 // Without return 
 //  Regular Function without parameter
 
+// function add_number(){ // without parameter
+//     console.log("Add two number",5+5)
+//     console.log("Add two number")
+// }
+// add_number()
 
+// function sum(a,b,){         //with parameter      
+//  console.log("Sum of two number is:" ,a+b)
+// }
+// sum(5,10)
+// sum(100,10)
+// sum(32.5,50.5)
+
+// function sum_number(a=10,b=10){         //with parameter   default prameter    
+//     console.log("Sum of two number is:" ,a+b)
+//    }
+//    sum_number()
 
 // use of return statement
 // function product_number(a,b){
@@ -30,36 +46,83 @@
 
 // }
 
+// ********************************************************
+let a = "JavaScript";
+// for(let i =0; i<=a.length;i++){
+//     console.log(a[i])
+// }
+
+// for(let i =a.length-1;i>=0;i--){
+//     console.log(a[i])
+// }
+// Palaindrome
+// let str = "Javascript";
+function isplaindrome(str){
+    let reverse_str= "";
+for(let i =str.length-1;i>=0;i--){
+    reverse_str = reverse_str+str[i]
+}
+if(str === reverse_str){
+    console.log("Its a plaindrome word")
+}else{
+
+    console.log("Its not a plaindrome word")
+}
+}
+isplaindrome("madam")
+isplaindrome("Javascript")
+isplaindrome("racecar")
+
+// ********************************Rock Paper and sessiror Game**********************
+// let player1 = "Rock";
+// let palyer2 ="Sessiors";
+// if(player1==player2){
+//     console.log("Tie")
+// }else if(palyer1="Rock"&&player2="" ||){
+    
+// }
+
+// loop intilize, condition, increment/decrement
+
+// let i = 0;
+// // let str = "shumaila"
+// let arr= ["Sat","Sun","Mon","Tuesday"]
+// while(i<arr.length){
+//     console.log(arr[i])
+//     i++
+
+// }
+
+
+// let  i =0;
+// do{
+//     console.log("print number 1 to 10",i)
+//     i = i+3
+// }while(i>=21)
 
 // let str = "javascript";
-function isplaindrome(str){
-    let reverse_str ="";
-    for(let i = str.length-1;i>=0;i--){
-        reverse_str =reverse_str+str[i] 
-    }
-    if(str === reverse_str){
-        console.log("Its a plaindrome word")
-    }else{
+// function isplaindrome(str){
+//     let reverse_str ="";
+//     for(let i = str.length-1;i>=0;i--){
+//         reverse_str =reverse_str+str[i] 
+//     }
+//     if(str === reverse_str){
+//         console.log("Its a plaindrome word")
+//     }else{
     
-        console.log("Its not a plaindrome word")
-    }
-}
+//         console.log("Its not a plaindrome word")
+//     }
+// }
 
-isplaindrome("madam")
-// arrow function
-let arr_fun=()=>{
-    console.log("Hello world JavaScript")
-}
-arr_fun()
+// isplaindrome("madam")
+// // arrow function
+// let arr_fun=()=>{
+//     console.log("Hello world JavaScript")
+// }
+// arr_fun()
 
-let sub= (a,b)=>a-b
-console.log(sub(200,150))
-
-
-
-
-
-
+// let sub= (a,b)=>a-b
+// console.log(sub(200,150))
 
 
 // function hello_fun(){    //let a =6,b= 10
@@ -113,24 +176,6 @@ console.log(sub(200,150))
 
 // }
 
-// function add_number(){ // without parameter
-//     console.log("Add two number",5+5)
-//     console.log("Add two number")
-// }
-// add_number()
-
-// function sum(a,b,){         //with parameter      
-//  console.log("Sum of two number is:" ,a+b)
-// }
-// sum(5,10)
-// sum(100,10)
-// sum(32.5,50.5)
-
-// function sum_number(a=10,b=10){         //with parameter   default prameter    
-//     console.log("Sum of two number is:" ,a+b)
-//    }
-//    sum_number()
-
 //arrow function
 // let student_name =(first_name,secocond_name) =>{
 // console.log(first_name+secocond_name)
@@ -161,18 +206,6 @@ console.log(sub(200,150))
 // for(let i =0;i<My_name.length ;i++){
 //     console.log(My_name[i])
 // }
-
-// let str = "madam";
-// let reverse_str = "";
-// for ( let i =str.length-1;i>=0;i--){
-//      reverse_str +=str[i]
-// }
-// if(str ===reverse_str){
-//     console.log("Its a plaindrom word")
-// }else{
-// console.log("Its not a plaindrom word")
-// }
-
 
 // let addnumber= ()=>console.log("Hello World")
 // addnumber()
