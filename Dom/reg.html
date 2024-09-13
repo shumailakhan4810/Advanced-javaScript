@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ***A regular expression is a sequence of characters that forms a search pattern.
+
+    The search pattern can be used for text search and text replace operation** -->
+
+
+    <!-- Literals =ordinary character 'a' ,'b,'% -->
+     <!-- MetaCharacter  ^ start with caret,end with $ '.' mean any character  
+     characterClass = [] set of character like [a-z] for any lowercase letter.
+     characterClassandshorthand :In addition to specific character sets regex includes several shorthand character. -->
+     <!-- ^[A-Za-z]$ only single character
+     Quintifires : Specify how many times a character can occur ,like '+' one or more time
+     '*' (Zero or more time) or {1,4} between one and four time
+     ^[A-Za-z]{1,3}$, ^[A-Za-z]+$ , ^[A-Za-z\d]*$
+
+     **escape character**: use a backslash('\')to escape special characters and treat them like ordinary characters.
+     Example
+     \. : match a literal dot.
+     \$ :matches a dollar sign. \$
+     \^: matches a caret .'^'
+     ^[A-Za-z\d\@]+$ ,  ^[A-Za-z\d\.]+$ ,
+
+    LocalParat : the part form the @ sign
+    DomainPart :the part after the @ but before the top level domain.
+    top-level domain(tld) : the last part following the last dot.  //.com
+        shum101_khan10
+        shum@gamil.com
+
+    ^[A-Za-z\d]+(?:[_%+][A-Za-z\d]+)*@[a-z]+\.[a-z]{2,4}$
+    shum_566@gmail.com -->
+     <!-- <form action="">
+        <input type="email" class="Email">
+     </form> -->
+     <script>
+        const validateEmail = (email)=>{
+            return /^[A-Za-z\d]+(?:[_%+][A-Za-z\d]+)*@[a-z]+\.[a-z]{2,4}$/.test(email);
+        }
+        console.log(validateEmail('sh@um@gamil.com'))
+
+        console.log(validateEmail('shu_mg5@gmail.com'))
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Example: The local part of the email address (before the '@')can contain:
+     //AlphaCharacter[A-Z,a-z,0-9]
+     Special Charcter @, _,. +, % , 
+     special character cannot apper at the beginning or end of the local part
+     Consecutive perriods are not allowed -->
+</body>
+</html>
